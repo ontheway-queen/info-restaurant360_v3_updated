@@ -34,7 +34,20 @@ export function Header() {
       className={`sticky top-0 z-50 w-full border-b transition-all ${scrolled ? "border-border bg-background/85 backdrop-blur-md shadow-sm" : "border-transparent bg-background/60 backdrop-blur"}`}
     >
       <div className="mx-auto flex h-16 max-w-[1400px] items-center justify-between gap-4 px-4">
-        <Link to="/" className="flex items-center gap-2 font-bold">
+        <Link
+          to="/"
+          className="flex items-center gap-2 shrink-0"
+          onClick={(e) => {
+            if (window.location.pathname === "/") {
+              e.preventDefault();
+
+              window.scrollTo({
+                top: 0,
+                behavior: "smooth",
+              });
+            }
+          }}
+        >
           <img src={logo} alt="main-logo" className="w-[200px]" />
         </Link>
 
