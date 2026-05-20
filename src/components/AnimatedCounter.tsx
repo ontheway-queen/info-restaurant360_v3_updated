@@ -8,7 +8,12 @@ interface AnimatedCounterProps {
   duration?: number;
 }
 
-export function AnimatedCounter({ value, suffix = "", prefix = "", duration = 1.4 }: AnimatedCounterProps) {
+export function AnimatedCounter({
+  value,
+  suffix = "",
+  prefix = "",
+  duration = 1.4,
+}: AnimatedCounterProps) {
   const ref = useRef<HTMLSpanElement>(null);
   const inView = useInView(ref, { once: true, margin: "-50px" });
   const count = useMotionValue(0);

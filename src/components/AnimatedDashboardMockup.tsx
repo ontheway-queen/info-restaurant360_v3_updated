@@ -25,7 +25,9 @@ export function AnimatedDashboardMockup() {
       >
         <div className="flex items-center justify-between border-b border-border pb-3">
           <div>
-            <div className="text-xs text-muted-foreground">{lang === "bn" ? "ড্যাশবোর্ড" : "Dashboard"}</div>
+            <div className="text-xs text-muted-foreground">
+              {lang === "bn" ? "ড্যাশবোর্ড" : "Dashboard"}
+            </div>
             <div className="text-sm font-semibold">RESTAURANT360</div>
           </div>
           <div className="flex gap-1.5">
@@ -36,10 +38,37 @@ export function AnimatedDashboardMockup() {
         </div>
 
         <div className="mt-4 grid grid-cols-2 gap-3">
-          <StatCard icon={<TrendingUp className="h-4 w-4" />} label={t.hero.stats.sales} value={<><span>৳</span><AnimatedCounter value={48230} /></>} accent />
-          <StatCard icon={<ShoppingBag className="h-4 w-4" />} label={t.hero.stats.active} value={<AnimatedCounter value={18} />} />
-          <StatCard icon={<ChefHat className="h-4 w-4" />} label={t.hero.stats.ready} value={<AnimatedCounter value={7} />} />
-          <StatCard icon={<Wallet className="h-4 w-4" />} label={t.hero.stats.pending} value={<><span>৳</span><AnimatedCounter value={6420} /></>} />
+          <StatCard
+            icon={<TrendingUp className="h-4 w-4" />}
+            label={t.hero.stats.sales}
+            value={
+              <>
+                <span>৳</span>
+                <AnimatedCounter value={48230} />
+              </>
+            }
+            accent
+          />
+          <StatCard
+            icon={<ShoppingBag className="h-4 w-4" />}
+            label={t.hero.stats.active}
+            value={<AnimatedCounter value={18} />}
+          />
+          <StatCard
+            icon={<ChefHat className="h-4 w-4" />}
+            label={t.hero.stats.ready}
+            value={<AnimatedCounter value={7} />}
+          />
+          <StatCard
+            icon={<Wallet className="h-4 w-4" />}
+            label={t.hero.stats.pending}
+            value={
+              <>
+                <span>৳</span>
+                <AnimatedCounter value={6420} />
+              </>
+            }
+          />
         </div>
 
         <div className="mt-4 rounded-xl border border-border bg-secondary/50 p-3">
@@ -72,7 +101,9 @@ export function AnimatedDashboardMockup() {
             <Package className="h-4 w-4 text-[var(--warning)]" />
             <span>{t.hero.stats.lowStock}</span>
           </div>
-          <span className="rounded-full bg-[var(--warning)]/15 px-2 py-0.5 text-xs font-semibold text-[var(--warning)]">3</span>
+          <span className="rounded-full bg-[var(--warning)]/15 px-2 py-0.5 text-xs font-semibold text-[var(--warning)]">
+            3
+          </span>
         </div>
       </motion.div>
 
@@ -80,14 +111,21 @@ export function AnimatedDashboardMockup() {
       <motion.div
         initial={{ opacity: 0, x: -20 }}
         animate={{ opacity: 1, x: 0, y: [0, -8, 0] }}
-        transition={{ x: { duration: 0.6, delay: 0.4 }, y: { duration: 4, repeat: Infinity, ease: "easeInOut" } }}
+        transition={{
+          x: { duration: 0.6, delay: 0.4 },
+          y: { duration: 4, repeat: Infinity, ease: "easeInOut" },
+        }}
         className="absolute -left-6 top-24 hidden rounded-xl border border-border bg-card p-3 shadow-xl md:block"
       >
         <div className="flex items-center gap-2">
-          <div className="grid h-8 w-8 place-items-center rounded-lg bg-[var(--success)]/15 text-[var(--success)]"><ChefHat className="h-4 w-4" /></div>
+          <div className="grid h-8 w-8 place-items-center rounded-lg bg-[var(--success)]/15 text-[var(--success)]">
+            <ChefHat className="h-4 w-4" />
+          </div>
           <div>
             <div className="text-[10px] text-muted-foreground">{t.hero.stats.ready}</div>
-            <div className="text-sm font-bold"><AnimatedCounter value={7} /></div>
+            <div className="text-sm font-bold">
+              <AnimatedCounter value={7} />
+            </div>
           </div>
         </div>
       </motion.div>
@@ -95,14 +133,21 @@ export function AnimatedDashboardMockup() {
       <motion.div
         initial={{ opacity: 0, x: 20 }}
         animate={{ opacity: 1, x: 0, y: [0, 8, 0] }}
-        transition={{ x: { duration: 0.6, delay: 0.5 }, y: { duration: 4.5, repeat: Infinity, ease: "easeInOut" } }}
+        transition={{
+          x: { duration: 0.6, delay: 0.5 },
+          y: { duration: 4.5, repeat: Infinity, ease: "easeInOut" },
+        }}
         className="absolute -right-6 bottom-24 hidden rounded-xl border border-border bg-card p-3 shadow-xl md:block"
       >
         <div className="flex items-center gap-2">
-          <div className="grid h-8 w-8 place-items-center rounded-lg bg-primary/15 text-primary"><Clock className="h-4 w-4" /></div>
+          <div className="grid h-8 w-8 place-items-center rounded-lg bg-primary/15 text-primary">
+            <Clock className="h-4 w-4" />
+          </div>
           <div>
             <div className="text-[10px] text-muted-foreground">{t.hero.stats.active}</div>
-            <div className="text-sm font-bold"><AnimatedCounter value={18} /></div>
+            <div className="text-sm font-bold">
+              <AnimatedCounter value={18} />
+            </div>
           </div>
         </div>
       </motion.div>
@@ -110,9 +155,21 @@ export function AnimatedDashboardMockup() {
   );
 }
 
-function StatCard({ icon, label, value, accent }: { icon: React.ReactNode; label: string; value: React.ReactNode; accent?: boolean }) {
+function StatCard({
+  icon,
+  label,
+  value,
+  accent,
+}: {
+  icon: React.ReactNode;
+  label: string;
+  value: React.ReactNode;
+  accent?: boolean;
+}) {
   return (
-    <div className={`rounded-xl border border-border p-3 ${accent ? "bg-gradient-to-br from-primary/10 to-transparent" : "bg-card"}`}>
+    <div
+      className={`rounded-xl border border-border p-3 ${accent ? "bg-gradient-to-br from-primary/10 to-transparent" : "bg-card"}`}
+    >
       <div className="flex items-center gap-1.5 text-[11px] text-muted-foreground">
         <span className={accent ? "text-primary" : ""}>{icon}</span>
         <span>{label}</span>

@@ -18,23 +18,63 @@ export const translations = {
       requestDemo: "Request Demo",
     },
     seo: {
-      home: { title: "RESTAURANT360 | Complete Restaurant Management Software", description: "Manage POS, table orders, kitchen KOT, inventory, suppliers, HR, accounts, settlement, and reports with RESTAURANT360." },
-      why: { title: "Why RESTAURANT360 | Smart Restaurant Software", description: "Discover why restaurants, cafes and cloud kitchens choose RESTAURANT360 for complete operations control." },
-      features: { title: "Features | RESTAURANT360", description: "POS, KOT, inventory, accounts, settlement, reports — all in one premium platform." },
-      pos: { title: "Restaurant POS Software | RESTAURANT360", description: "Fast POS billing for table and non-table orders with real-time calculation." },
-      orders: { title: "Order Management | RESTAURANT360", description: "Complete order lifecycle management with table tracking and modification." },
-      kitchen: { title: "Kitchen / KOT | RESTAURANT360", description: "Send orders to the kitchen and track preparation in real time with KOT." },
-      inventory: { title: "Inventory Management | RESTAURANT360", description: "Smart inventory and stock control with low stock alerts and reports." },
-      accounts: { title: "Accounts & Finance | RESTAURANT360", description: "Track income, expenses, sales, purchases and full restaurant finance." },
-      settlement: { title: "Cash, Bank & Settlement | RESTAURANT360", description: "Track cash, bank, card and gateway settlement with full visibility." },
-      reports: { title: "Reports & Analytics | RESTAURANT360", description: "Sales, inventory, finance and settlement reports for better decisions." },
-      pricing: { title: "Request Demo | RESTAURANT360", description: "Request a personalized demo of RESTAURANT360 for your business." },
-      contact: { title: "Contact | RESTAURANT360", description: "Get in touch with the RESTAURANT360 team." },
+      home: {
+        title: "RESTAURANT360 | Complete Restaurant Management Software",
+        description:
+          "Manage POS, table orders, kitchen KOT, inventory, suppliers, HR, accounts, settlement, and reports with RESTAURANT360.",
+      },
+      why: {
+        title: "Why RESTAURANT360 | Smart Restaurant Software",
+        description:
+          "Discover why restaurants, cafes and cloud kitchens choose RESTAURANT360 for complete operations control.",
+      },
+      features: {
+        title: "Features | RESTAURANT360",
+        description:
+          "POS, KOT, inventory, accounts, settlement, reports — all in one premium platform.",
+      },
+      pos: {
+        title: "Restaurant POS Software | RESTAURANT360",
+        description: "Fast POS billing for table and non-table orders with real-time calculation.",
+      },
+      orders: {
+        title: "Order Management | RESTAURANT360",
+        description: "Complete order lifecycle management with table tracking and modification.",
+      },
+      kitchen: {
+        title: "Kitchen / KOT | RESTAURANT360",
+        description: "Send orders to the kitchen and track preparation in real time with KOT.",
+      },
+      inventory: {
+        title: "Inventory Management | RESTAURANT360",
+        description: "Smart inventory and stock control with low stock alerts and reports.",
+      },
+      accounts: {
+        title: "Accounts & Finance | RESTAURANT360",
+        description: "Track income, expenses, sales, purchases and full restaurant finance.",
+      },
+      settlement: {
+        title: "Cash, Bank & Settlement | RESTAURANT360",
+        description: "Track cash, bank, card and gateway settlement with full visibility.",
+      },
+      reports: {
+        title: "Reports & Analytics | RESTAURANT360",
+        description: "Sales, inventory, finance and settlement reports for better decisions.",
+      },
+      pricing: {
+        title: "Request Demo | RESTAURANT360",
+        description: "Request a personalized demo of RESTAURANT360 for your business.",
+      },
+      contact: {
+        title: "Contact | RESTAURANT360",
+        description: "Get in touch with the RESTAURANT360 team.",
+      },
     },
     hero: {
       badge: "Restaurant Management Software",
       title: "Smart Restaurant Management Software for Modern Food Businesses",
-      subtitle: "Manage POS, table orders, kitchen operations, menu items, inventory, suppliers, HR, accounts, cash/bank settlement, and reports — all in one powerful platform.",
+      subtitle:
+        "Manage POS, table orders, kitchen operations, menu items, inventory, suppliers, HR, accounts, cash/bank settlement, and reports — all in one powerful platform.",
       primaryCta: "Request Demo",
       secondaryCta: "Explore Features",
       stats: {
@@ -46,12 +86,30 @@ export const translations = {
       },
     },
     stats: [
-      { title: "Fast POS Billing", desc: "Lightning-fast order creation and billing for any restaurant type." },
-      { title: "Table & Non-table Orders", desc: "Run dine-in, takeaway, counter and cloud kitchen from one POS." },
-      { title: "Real-time Kitchen Tracking", desc: "Send KOT and track preparation status live from the floor." },
-      { title: "Smart Inventory Control", desc: "Track raw materials, purchases, stock and low-stock alerts." },
-      { title: "Cash & Bank Settlement", desc: "Verify daily cash, bank and gateway collections clearly." },
-      { title: "Sales & Financial Reports", desc: "Make better decisions with daily, monthly and custom reports." },
+      {
+        title: "Fast POS Billing",
+        desc: "Lightning-fast order creation and billing for any restaurant type.",
+      },
+      {
+        title: "Table & Non-table Orders",
+        desc: "Run dine-in, takeaway, counter and cloud kitchen from one POS.",
+      },
+      {
+        title: "Real-time Kitchen Tracking",
+        desc: "Send KOT and track preparation status live from the floor.",
+      },
+      {
+        title: "Smart Inventory Control",
+        desc: "Track raw materials, purchases, stock and low-stock alerts.",
+      },
+      {
+        title: "Cash & Bank Settlement",
+        desc: "Verify daily cash, bank and gateway collections clearly.",
+      },
+      {
+        title: "Sales & Financial Reports",
+        desc: "Make better decisions with daily, monthly and custom reports.",
+      },
     ],
     homeSections: {
       trustedTitle: "Trusted by restaurants, cafes, cloud kitchens & food courts",
@@ -60,7 +118,8 @@ export const translations = {
       whyTitle: "Why RESTAURANT360",
       whySub: "Built for real restaurant operations — not generic retail.",
       finalCtaTitle: "Run Your Restaurant with Complete Control",
-      finalCtaSub: "From the first order to the final settlement — RESTAURANT360 keeps everything connected.",
+      finalCtaSub:
+        "From the first order to the final settlement — RESTAURANT360 keeps everything connected.",
       finalCtaBtn: "Request Demo",
     },
     modules: [
@@ -95,17 +154,50 @@ export const translations = {
       heading: "Why Restaurants Choose RESTAURANT360",
       sub: "Built for real restaurants — not generic retail software.",
       sections: [
-        { title: "Built for real restaurant operations", desc: "Designed around how kitchens, cashiers and managers actually work." },
-        { title: "Fast and flexible POS", desc: "Cut order time with a POS designed for speed and accuracy." },
-        { title: "Table-based and non-table order support", desc: "Run dine-in, takeaway, counter and cloud kitchen seamlessly." },
-        { title: "Kitchen coordination with KOT", desc: "Reduce miscommunication between floor and kitchen." },
-        { title: "Food, menu and add-on control", desc: "Manage every item, price and customization easily." },
-        { title: "Inventory and supplier visibility", desc: "Know your stock and supplier history anytime." },
-        { title: "Sales, accounts and finance connected", desc: "POS data flows into accounts automatically." },
-        { title: "Cash, bank and settlement visibility", desc: "Verify every payment method before closing day." },
-        { title: "Better reports for management decisions", desc: "Daily, monthly and custom reports for smarter planning." },
-        { title: "Role-based access and administration", desc: "Give the right access to the right people." },
-        { title: "Suitable for any food business", desc: "Restaurants, cafes, fast food, food courts and cloud kitchens." },
+        {
+          title: "Built for real restaurant operations",
+          desc: "Designed around how kitchens, cashiers and managers actually work.",
+        },
+        {
+          title: "Fast and flexible POS",
+          desc: "Cut order time with a POS designed for speed and accuracy.",
+        },
+        {
+          title: "Table-based and non-table order support",
+          desc: "Run dine-in, takeaway, counter and cloud kitchen seamlessly.",
+        },
+        {
+          title: "Kitchen coordination with KOT",
+          desc: "Reduce miscommunication between floor and kitchen.",
+        },
+        {
+          title: "Food, menu and add-on control",
+          desc: "Manage every item, price and customization easily.",
+        },
+        {
+          title: "Inventory and supplier visibility",
+          desc: "Know your stock and supplier history anytime.",
+        },
+        {
+          title: "Sales, accounts and finance connected",
+          desc: "POS data flows into accounts automatically.",
+        },
+        {
+          title: "Cash, bank and settlement visibility",
+          desc: "Verify every payment method before closing day.",
+        },
+        {
+          title: "Better reports for management decisions",
+          desc: "Daily, monthly and custom reports for smarter planning.",
+        },
+        {
+          title: "Role-based access and administration",
+          desc: "Give the right access to the right people.",
+        },
+        {
+          title: "Suitable for any food business",
+          desc: "Restaurants, cafes, fast food, food courts and cloud kitchens.",
+        },
       ],
       benefits: [
         "Reduce order mistakes",
@@ -140,9 +232,11 @@ export const translations = {
       sub: "RESTAURANT360 POS is designed for fast order creation, billing and real-time calculation.",
       modesTitle: "Two POS Modes",
       tableTitle: "Table-based POS",
-      tableDesc: "Orders are linked with restaurant tables. Track occupied, available and reserved tables. Ideal for dine-in restaurants.",
+      tableDesc:
+        "Orders are linked with restaurant tables. Track occupied, available and reserved tables. Ideal for dine-in restaurants.",
       nonTableTitle: "Non-table POS",
-      nonTableDesc: "Continuous order creation with no table dependency. Ideal for takeaway, counter sales, fast food and cloud kitchens.",
+      nonTableDesc:
+        "Continuous order creation with no table dependency. Ideal for takeaway, counter sales, fast food and cloud kitchens.",
       capabilitiesTitle: "POS Capabilities",
       capabilities: [
         "Fast order creation",
@@ -173,12 +267,25 @@ export const translations = {
         "Ongoing order management",
       ],
       tableTitle: "Table Management",
-      tableFeatures: ["Create tables", "Update tables", "Delete tables", "Track table status", "Occupied, available, reserved status"],
+      tableFeatures: [
+        "Create tables",
+        "Update tables",
+        "Delete tables",
+        "Track table status",
+        "Occupied, available, reserved status",
+      ],
     },
     kitchenKot: {
       heading: "Kitchen Order Tracking with KOT",
       sub: "Send orders to the kitchen and track preparation in real time.",
-      flow: ["Order Created", "Sent to Kitchen", "Preparing", "Ready", "Served", "Payment Completed"],
+      flow: [
+        "Order Created",
+        "Sent to Kitchen",
+        "Preparing",
+        "Ready",
+        "Served",
+        "Payment Completed",
+      ],
       features: [
         "Send orders to kitchen",
         "Track preparation status",
@@ -219,12 +326,25 @@ export const translations = {
         "Inventory reports",
       ],
       supplierTitle: "Supplier and Purchase Control",
-      supplierFeatures: ["Supplier CRUD", "Supplier contact records", "Purchase history by supplier", "Supplier transaction records", "Vendor-wise procurement tracking"],
+      supplierFeatures: [
+        "Supplier CRUD",
+        "Supplier contact records",
+        "Purchase history by supplier",
+        "Supplier transaction records",
+        "Vendor-wise procurement tracking",
+      ],
     },
     hr: {
       heading: "Restaurant Staff and HR Management",
       sub: "Manage employees, designations and access in one place.",
-      features: ["Employee CRUD", "Employee management", "Designation management", "Role assignment", "Staff data management", "Employee access control"],
+      features: [
+        "Employee CRUD",
+        "Employee management",
+        "Designation management",
+        "Role assignment",
+        "Staff data management",
+        "Employee access control",
+      ],
     },
     accounts: {
       heading: "Restaurant Accounts and Finance Control",
@@ -275,7 +395,14 @@ export const translations = {
         "Bank-wise settlement report",
       ],
       flowTitle: "Settlement Flow",
-      flow: ["Customer Payment", "Payment Method Wise Collection", "Cash/Bank/Gateway Pending", "Settlement Review", "Bank Deposit / Gateway Settlement", "Final Settlement Report"],
+      flow: [
+        "Customer Payment",
+        "Payment Method Wise Collection",
+        "Cash/Bank/Gateway Pending",
+        "Settlement Review",
+        "Bank Deposit / Gateway Settlement",
+        "Final Settlement Report",
+      ],
     },
     reports: {
       heading: "Reports That Help You Make Better Decisions",
@@ -380,7 +507,8 @@ export const translations = {
       email: "sup.m360ict@gmail.com",
     },
     footer: {
-      tagline: "A powerful all-in-one restaurant management platform that unifies POS, table ordering, KOT system, inventory control, supplier management, HR, accounting, and real-time business analytics. ",
+      tagline:
+        "A powerful all-in-one restaurant management platform that unifies POS, table ordering, KOT system, inventory control, supplier management, HR, accounting, and real-time business analytics. ",
       product: "Product",
       company: "Company",
       support: "Support",
@@ -399,7 +527,7 @@ export const translations = {
         docs: "Documentation",
         privacy: "Privacy Policy",
         terms: "Terms of Service",
-        pricing: "Pricing"
+        pricing: "Pricing",
       },
     },
   },
@@ -420,23 +548,62 @@ export const translations = {
       requestDemo: "ডেমো চাই",
     },
     seo: {
-      home: { title: "RESTAURANT360 | সম্পূর্ণ রেস্টুরেন্ট ম্যানেজমেন্ট সফটওয়্যার", description: "RESTAURANT360 দিয়ে POS, table order, kitchen KOT, inventory, supplier, HR, accounts, settlement এবং reports পরিচালনা করুন।" },
-      why: { title: "কেন RESTAURANT360 | স্মার্ট রেস্টুরেন্ট সফটওয়্যার", description: "রেস্টুরেন্ট, ক্যাফে এবং ক্লাউড কিচেন কেন RESTAURANT360 বেছে নেয় তা জানুন।" },
-      features: { title: "ফিচার | RESTAURANT360", description: "POS, KOT, inventory, accounts, settlement, reports — সব এক প্রিমিয়াম প্ল্যাটফর্মে।" },
-      pos: { title: "রেস্টুরেন্ট POS সফটওয়্যার | RESTAURANT360", description: "টেবিল ও নন-টেবিল অর্ডারের জন্য দ্রুত POS বিলিং।" },
-      orders: { title: "অর্ডার ম্যানেজমেন্ট | RESTAURANT360", description: "টেবিল ট্র্যাকিং সহ সম্পূর্ণ অর্ডার লাইফসাইকেল ম্যানেজমেন্ট।" },
-      kitchen: { title: "কিচেন / KOT | RESTAURANT360", description: "অর্ডার কিচেনে পাঠান এবং রিয়েল-টাইমে প্রস্তুতি ট্র্যাক করুন।" },
-      inventory: { title: "ইনভেন্টরি ম্যানেজমেন্ট | RESTAURANT360", description: "লো স্টক অ্যালার্ট সহ স্মার্ট ইনভেন্টরি ও স্টক কন্ট্রোল।" },
-      accounts: { title: "অ্যাকাউন্টস ও ফাইন্যান্স | RESTAURANT360", description: "ইনকাম, এক্সপেন্স, সেলস ও পারচেজ ট্র্যাক করুন।" },
-      settlement: { title: "ক্যাশ, ব্যাংক ও সেটেলমেন্ট | RESTAURANT360", description: "ক্যাশ, ব্যাংক, কার্ড ও গেটওয়ে সেটেলমেন্ট পরিষ্কারভাবে ট্র্যাক করুন।" },
-      reports: { title: "রিপোর্ট ও অ্যানালিটিকস | RESTAURANT360", description: "সেলস, ইনভেন্টরি, ফাইন্যান্স ও সেটেলমেন্ট রিপোর্ট।" },
-      pricing: { title: "ডেমো চাই | RESTAURANT360", description: "RESTAURANT360 এর পার্সোনালাইজড ডেমো রিকোয়েস্ট করুন।" },
-      contact: { title: "যোগাযোগ | RESTAURANT360", description: "RESTAURANT360 টিমের সাথে যোগাযোগ করুন।" },
+      home: {
+        title: "RESTAURANT360 | সম্পূর্ণ রেস্টুরেন্ট ম্যানেজমেন্ট সফটওয়্যার",
+        description:
+          "RESTAURANT360 দিয়ে POS, table order, kitchen KOT, inventory, supplier, HR, accounts, settlement এবং reports পরিচালনা করুন।",
+      },
+      why: {
+        title: "কেন RESTAURANT360 | স্মার্ট রেস্টুরেন্ট সফটওয়্যার",
+        description: "রেস্টুরেন্ট, ক্যাফে এবং ক্লাউড কিচেন কেন RESTAURANT360 বেছে নেয় তা জানুন।",
+      },
+      features: {
+        title: "ফিচার | RESTAURANT360",
+        description:
+          "POS, KOT, inventory, accounts, settlement, reports — সব এক প্রিমিয়াম প্ল্যাটফর্মে।",
+      },
+      pos: {
+        title: "রেস্টুরেন্ট POS সফটওয়্যার | RESTAURANT360",
+        description: "টেবিল ও নন-টেবিল অর্ডারের জন্য দ্রুত POS বিলিং।",
+      },
+      orders: {
+        title: "অর্ডার ম্যানেজমেন্ট | RESTAURANT360",
+        description: "টেবিল ট্র্যাকিং সহ সম্পূর্ণ অর্ডার লাইফসাইকেল ম্যানেজমেন্ট।",
+      },
+      kitchen: {
+        title: "কিচেন / KOT | RESTAURANT360",
+        description: "অর্ডার কিচেনে পাঠান এবং রিয়েল-টাইমে প্রস্তুতি ট্র্যাক করুন।",
+      },
+      inventory: {
+        title: "ইনভেন্টরি ম্যানেজমেন্ট | RESTAURANT360",
+        description: "লো স্টক অ্যালার্ট সহ স্মার্ট ইনভেন্টরি ও স্টক কন্ট্রোল।",
+      },
+      accounts: {
+        title: "অ্যাকাউন্টস ও ফাইন্যান্স | RESTAURANT360",
+        description: "ইনকাম, এক্সপেন্স, সেলস ও পারচেজ ট্র্যাক করুন।",
+      },
+      settlement: {
+        title: "ক্যাশ, ব্যাংক ও সেটেলমেন্ট | RESTAURANT360",
+        description: "ক্যাশ, ব্যাংক, কার্ড ও গেটওয়ে সেটেলমেন্ট পরিষ্কারভাবে ট্র্যাক করুন।",
+      },
+      reports: {
+        title: "রিপোর্ট ও অ্যানালিটিকস | RESTAURANT360",
+        description: "সেলস, ইনভেন্টরি, ফাইন্যান্স ও সেটেলমেন্ট রিপোর্ট।",
+      },
+      pricing: {
+        title: "ডেমো চাই | RESTAURANT360",
+        description: "RESTAURANT360 এর পার্সোনালাইজড ডেমো রিকোয়েস্ট করুন।",
+      },
+      contact: {
+        title: "যোগাযোগ | RESTAURANT360",
+        description: "RESTAURANT360 টিমের সাথে যোগাযোগ করুন।",
+      },
     },
     hero: {
       badge: "রেস্টুরেন্ট ম্যানেজমেন্ট সফটওয়্যার",
       title: "আধুনিক রেস্টুরেন্ট পরিচালনার স্মার্ট সফটওয়্যার",
-      subtitle: "POS, table order, kitchen operation, menu item, inventory, supplier, HR, accounts, cash/bank settlement এবং reports — সবকিছু এক শক্তিশালী প্ল্যাটফর্মে পরিচালনা করুন।",
+      subtitle:
+        "POS, table order, kitchen operation, menu item, inventory, supplier, HR, accounts, cash/bank settlement এবং reports — সবকিছু এক শক্তিশালী প্ল্যাটফর্মে পরিচালনা করুন।",
       primaryCta: "ডেমো চাই",
       secondaryCta: "ফিচার দেখুন",
       stats: {
@@ -449,11 +616,20 @@ export const translations = {
     },
     stats: [
       { title: "দ্রুত POS বিলিং", desc: "যেকোনো রেস্টুরেন্টের জন্য দ্রুত অর্ডার ও বিলিং।" },
-      { title: "টেবিল ও নন-টেবিল অর্ডার", desc: "ডাইন-ইন, টেকঅ্যাওয়ে, কাউন্টার ও ক্লাউড কিচেন এক POS-এ।" },
+      {
+        title: "টেবিল ও নন-টেবিল অর্ডার",
+        desc: "ডাইন-ইন, টেকঅ্যাওয়ে, কাউন্টার ও ক্লাউড কিচেন এক POS-এ।",
+      },
       { title: "রিয়েল-টাইম কিচেন ট্র্যাকিং", desc: "KOT পাঠান এবং প্রস্তুতি লাইভ ট্র্যাক করুন।" },
       { title: "স্মার্ট ইনভেন্টরি কন্ট্রোল", desc: "র মেটেরিয়াল, পারচেজ ও স্টক ট্র্যাক করুন।" },
-      { title: "ক্যাশ ও ব্যাংক সেটেলমেন্ট", desc: "প্রতিদিনের ক্যাশ, ব্যাংক ও গেটওয়ে কালেকশন যাচাই করুন।" },
-      { title: "সেলস ও ফাইন্যান্স রিপোর্ট", desc: "ডেইলি, মান্থলি ও কাস্টম রিপোর্টে ভালো সিদ্ধান্ত নিন।" },
+      {
+        title: "ক্যাশ ও ব্যাংক সেটেলমেন্ট",
+        desc: "প্রতিদিনের ক্যাশ, ব্যাংক ও গেটওয়ে কালেকশন যাচাই করুন।",
+      },
+      {
+        title: "সেলস ও ফাইন্যান্স রিপোর্ট",
+        desc: "ডেইলি, মান্থলি ও কাস্টম রিপোর্টে ভালো সিদ্ধান্ত নিন।",
+      },
     ],
     homeSections: {
       trustedTitle: "রেস্টুরেন্ট, ক্যাফে, ক্লাউড কিচেন ও ফুড কোর্ট দ্বারা ব্যবহৃত",
@@ -497,17 +673,38 @@ export const translations = {
       heading: "রেস্টুরেন্টগুলো কেন RESTAURANT360 বেছে নেয়",
       sub: "জেনেরিক রিটেইল সফটওয়্যার নয় — সত্যিকারের রেস্টুরেন্টের জন্য তৈরি।",
       sections: [
-        { title: "সত্যিকারের রেস্টুরেন্ট অপারেশনের জন্য তৈরি", desc: "কিচেন, ক্যাশিয়ার ও ম্যানেজার যেভাবে কাজ করেন সেভাবেই ডিজাইন করা।" },
+        {
+          title: "সত্যিকারের রেস্টুরেন্ট অপারেশনের জন্য তৈরি",
+          desc: "কিচেন, ক্যাশিয়ার ও ম্যানেজার যেভাবে কাজ করেন সেভাবেই ডিজাইন করা।",
+        },
         { title: "দ্রুত ও নমনীয় POS", desc: "স্পিড ও অ্যাকুরেসির জন্য তৈরি POS।" },
-        { title: "টেবিল ও নন-টেবিল অর্ডার সাপোর্ট", desc: "ডাইন-ইন, টেকঅ্যাওয়ে, কাউন্টার ও ক্লাউড কিচেন।" },
+        {
+          title: "টেবিল ও নন-টেবিল অর্ডার সাপোর্ট",
+          desc: "ডাইন-ইন, টেকঅ্যাওয়ে, কাউন্টার ও ক্লাউড কিচেন।",
+        },
         { title: "KOT সহ কিচেন সমন্বয়", desc: "ফ্লোর ও কিচেনের মধ্যে ভুল কমান।" },
         { title: "ফুড, মেনু ও অ্যাড-অন কন্ট্রোল", desc: "প্রতিটি আইটেম, দাম ও কাস্টমাইজেশন সহজে।" },
-        { title: "ইনভেন্টরি ও সাপ্লায়ার ভিজিবিলিটি", desc: "যেকোনো সময় স্টক ও সাপ্লায়ার হিস্টরি জানুন।" },
-        { title: "সেলস, অ্যাকাউন্টস ও ফাইন্যান্স সংযুক্ত", desc: "POS ডাটা স্বয়ংক্রিয়ভাবে অ্যাকাউন্টসে যায়।" },
-        { title: "ক্যাশ, ব্যাংক ও সেটেলমেন্ট ভিজিবিলিটি", desc: "দিন শেষ করার আগে প্রতিটি পেমেন্ট মেথড যাচাই করুন।" },
-        { title: "ম্যানেজমেন্টের সিদ্ধান্তের জন্য রিপোর্ট", desc: "ডেইলি, মান্থলি ও কাস্টম রিপোর্ট।" },
+        {
+          title: "ইনভেন্টরি ও সাপ্লায়ার ভিজিবিলিটি",
+          desc: "যেকোনো সময় স্টক ও সাপ্লায়ার হিস্টরি জানুন।",
+        },
+        {
+          title: "সেলস, অ্যাকাউন্টস ও ফাইন্যান্স সংযুক্ত",
+          desc: "POS ডাটা স্বয়ংক্রিয়ভাবে অ্যাকাউন্টসে যায়।",
+        },
+        {
+          title: "ক্যাশ, ব্যাংক ও সেটেলমেন্ট ভিজিবিলিটি",
+          desc: "দিন শেষ করার আগে প্রতিটি পেমেন্ট মেথড যাচাই করুন।",
+        },
+        {
+          title: "ম্যানেজমেন্টের সিদ্ধান্তের জন্য রিপোর্ট",
+          desc: "ডেইলি, মান্থলি ও কাস্টম রিপোর্ট।",
+        },
         { title: "রোল-ভিত্তিক অ্যাকসেস", desc: "সঠিক ব্যক্তিকে সঠিক অ্যাকসেস দিন।" },
-        { title: "যেকোনো ফুড ব্যবসার জন্য উপযুক্ত", desc: "রেস্টুরেন্ট, ক্যাফে, ফাস্ট ফুড, ফুড কোর্ট ও ক্লাউড কিচেন।" },
+        {
+          title: "যেকোনো ফুড ব্যবসার জন্য উপযুক্ত",
+          desc: "রেস্টুরেন্ট, ক্যাফে, ফাস্ট ফুড, ফুড কোর্ট ও ক্লাউড কিচেন।",
+        },
       ],
       benefits: [
         "অর্ডার ভুল কমান",
@@ -542,9 +739,11 @@ export const translations = {
       sub: "RESTAURANT360 POS দ্রুত order creation, billing এবং real-time calculation-এর জন্য তৈরি।",
       modesTitle: "দুটি POS মোড",
       tableTitle: "টেবিল-ভিত্তিক POS",
-      tableDesc: "অর্ডার রেস্টুরেন্ট টেবিলের সাথে যুক্ত। অকুপাইড, অ্যাভেইলেবল ও রিজার্ভড টেবিল ট্র্যাক করুন। ডাইন-ইন রেস্টুরেন্টের জন্য আদর্শ।",
+      tableDesc:
+        "অর্ডার রেস্টুরেন্ট টেবিলের সাথে যুক্ত। অকুপাইড, অ্যাভেইলেবল ও রিজার্ভড টেবিল ট্র্যাক করুন। ডাইন-ইন রেস্টুরেন্টের জন্য আদর্শ।",
       nonTableTitle: "নন-টেবিল POS",
-      nonTableDesc: "টেবিল ছাড়া continuous অর্ডার তৈরি। টেকঅ্যাওয়ে, কাউন্টার সেলস, ফাস্ট ফুড ও ক্লাউড কিচেনের জন্য আদর্শ।",
+      nonTableDesc:
+        "টেবিল ছাড়া continuous অর্ডার তৈরি। টেকঅ্যাওয়ে, কাউন্টার সেলস, ফাস্ট ফুড ও ক্লাউড কিচেনের জন্য আদর্শ।",
       capabilitiesTitle: "POS সক্ষমতা",
       capabilities: [
         "দ্রুত অর্ডার তৈরি",
@@ -575,7 +774,13 @@ export const translations = {
         "অনগোয়িং অর্ডার ম্যানেজমেন্ট",
       ],
       tableTitle: "টেবিল ম্যানেজমেন্ট",
-      tableFeatures: ["টেবিল তৈরি", "টেবিল আপডেট", "টেবিল ডিলিট", "টেবিল স্ট্যাটাস ট্র্যাক", "অকুপাইড, অ্যাভেইলেবল, রিজার্ভড স্ট্যাটাস"],
+      tableFeatures: [
+        "টেবিল তৈরি",
+        "টেবিল আপডেট",
+        "টেবিল ডিলিট",
+        "টেবিল স্ট্যাটাস ট্র্যাক",
+        "অকুপাইড, অ্যাভেইলেবল, রিজার্ভড স্ট্যাটাস",
+      ],
     },
     kitchenKot: {
       heading: "KOT সহ কিচেন অর্ডার ট্র্যাকিং",
@@ -621,12 +826,25 @@ export const translations = {
         "ইনভেন্টরি রিপোর্ট",
       ],
       supplierTitle: "সাপ্লায়ার ও পারচেজ কন্ট্রোল",
-      supplierFeatures: ["সাপ্লায়ার CRUD", "সাপ্লায়ার কন্টাক্ট রেকর্ড", "সাপ্লায়ার অনুযায়ী পারচেজ হিস্টরি", "সাপ্লায়ার ট্রানজেকশন রেকর্ড", "ভেন্ডর-ভিত্তিক প্রোকিউরমেন্ট ট্র্যাকিং"],
+      supplierFeatures: [
+        "সাপ্লায়ার CRUD",
+        "সাপ্লায়ার কন্টাক্ট রেকর্ড",
+        "সাপ্লায়ার অনুযায়ী পারচেজ হিস্টরি",
+        "সাপ্লায়ার ট্রানজেকশন রেকর্ড",
+        "ভেন্ডর-ভিত্তিক প্রোকিউরমেন্ট ট্র্যাকিং",
+      ],
     },
     hr: {
       heading: "রেস্টুরেন্ট স্টাফ ও HR ম্যানেজমেন্ট",
       sub: "এক জায়গায় কর্মী, পদবি ও অ্যাকসেস ম্যানেজ করুন।",
-      features: ["এমপ্লয়ি CRUD", "এমপ্লয়ি ম্যানেজমেন্ট", "ডেজিগনেশন ম্যানেজমেন্ট", "রোল অ্যাসাইনমেন্ট", "স্টাফ ডাটা ম্যানেজমেন্ট", "এমপ্লয়ি অ্যাকসেস কন্ট্রোল"],
+      features: [
+        "এমপ্লয়ি CRUD",
+        "এমপ্লয়ি ম্যানেজমেন্ট",
+        "ডেজিগনেশন ম্যানেজমেন্ট",
+        "রোল অ্যাসাইনমেন্ট",
+        "স্টাফ ডাটা ম্যানেজমেন্ট",
+        "এমপ্লয়ি অ্যাকসেস কন্ট্রোল",
+      ],
     },
     accounts: {
       heading: "রেস্টুরেন্ট অ্যাকাউন্টস ও ফাইন্যান্স কন্ট্রোল",
@@ -677,7 +895,14 @@ export const translations = {
         "ব্যাংক-ভিত্তিক সেটেলমেন্ট রিপোর্ট",
       ],
       flowTitle: "সেটেলমেন্ট ফ্লো",
-      flow: ["কাস্টমার পেমেন্ট", "পেমেন্ট মেথড অনুযায়ী কালেকশন", "ক্যাশ/ব্যাংক/গেটওয়ে পেন্ডিং", "সেটেলমেন্ট রিভিউ", "ব্যাংক ডিপোজিট / গেটওয়ে সেটেলমেন্ট", "ফাইনাল সেটেলমেন্ট রিপোর্ট"],
+      flow: [
+        "কাস্টমার পেমেন্ট",
+        "পেমেন্ট মেথড অনুযায়ী কালেকশন",
+        "ক্যাশ/ব্যাংক/গেটওয়ে পেন্ডিং",
+        "সেটেলমেন্ট রিভিউ",
+        "ব্যাংক ডিপোজিট / গেটওয়ে সেটেলমেন্ট",
+        "ফাইনাল সেটেলমেন্ট রিপোর্ট",
+      ],
     },
     reports: {
       heading: "ভালো সিদ্ধান্ত নিতে সহায়ক রিপোর্ট",
@@ -782,7 +1007,8 @@ export const translations = {
       email: "sup.m360ict@gmail.com",
     },
     footer: {
-      tagline: "একটি শক্তিশালী অল-ইন-ওয়ান রেস্টুরেন্ট ম্যানেজমেন্ট প্ল্যাটফর্ম, যা POS, টেবিল অর্ডারিং, KOT সিস্টেম, ইনভেন্টরি কন্ট্রোল, সাপ্লায়ার ম্যানেজমেন্ট, HR, অ্যাকাউন্টিং এবং রিয়েল-টাইম বিজনেস অ্যানালিটিক্সকে একত্রিত করে পরিচালনা করতে সহায়তা করে।",
+      tagline:
+        "একটি শক্তিশালী অল-ইন-ওয়ান রেস্টুরেন্ট ম্যানেজমেন্ট প্ল্যাটফর্ম, যা POS, টেবিল অর্ডারিং, KOT সিস্টেম, ইনভেন্টরি কন্ট্রোল, সাপ্লায়ার ম্যানেজমেন্ট, HR, অ্যাকাউন্টিং এবং রিয়েল-টাইম বিজনেস অ্যানালিটিক্সকে একত্রিত করে পরিচালনা করতে সহায়তা করে।",
       product: "প্রোডাক্ট",
       company: "কোম্পানি",
       support: "সাপোর্ট",

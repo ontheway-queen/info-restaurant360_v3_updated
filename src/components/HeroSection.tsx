@@ -1,4 +1,6 @@
-import { Link } from "@tanstack/react-router";
+"use client";
+
+import Link from "next/link";
 import { motion } from "framer-motion";
 import { ArrowRight, Sparkles } from "lucide-react";
 import { useLanguage } from "@/i18n/LanguageProvider";
@@ -57,14 +59,14 @@ export function HeroSection() {
             className="mt-8 flex flex-wrap items-center gap-3"
           >
             <Link
-              to="/request-demo"
+              href="/request-demo"
               className="group inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-primary to-[oklch(0.72_0.18_55)] px-6 py-3 text-sm font-semibold text-primary-foreground shadow-lg shadow-primary/30 transition-transform hover:scale-105"
             >
               {t.hero.primaryCta}
               <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
             </Link>
             <Link
-              to="/features"
+              href="/features"
               className="inline-flex items-center gap-2 rounded-full border border-border bg-background px-6 py-3 text-sm font-semibold text-foreground transition-colors hover:bg-accent"
             >
               {t.hero.secondaryCta}

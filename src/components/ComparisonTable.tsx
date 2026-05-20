@@ -39,9 +39,15 @@ export function ComparisonTable() {
         <table className="w-full text-sm">
           <thead>
             <tr className="border-b border-border bg-secondary/50">
-              <th className="px-4 py-4 text-left font-semibold text-foreground">{t.comparison.cols[0]}</th>
-              <th className="px-4 py-4 text-center font-semibold text-muted-foreground">{t.comparison.cols[1]}</th>
-              <th className="px-4 py-4 text-center font-semibold text-muted-foreground">{t.comparison.cols[2]}</th>
+              <th className="px-4 py-4 text-left font-semibold text-foreground">
+                {t.comparison.cols[0]}
+              </th>
+              <th className="px-4 py-4 text-center font-semibold text-muted-foreground">
+                {t.comparison.cols[1]}
+              </th>
+              <th className="px-4 py-4 text-center font-semibold text-muted-foreground">
+                {t.comparison.cols[2]}
+              </th>
               <th className="px-4 py-4 text-center font-bold text-primary">
                 <span className="inline-flex items-center gap-1.5 rounded-full bg-gradient-to-r from-primary to-[oklch(0.72_0.18_55)] px-3 py-1 text-primary-foreground">
                   {t.comparison.cols[3]}
@@ -62,7 +68,9 @@ export function ComparisonTable() {
                 <td className="px-4 py-3 font-medium text-foreground">{row}</td>
                 <td className="px-4 py-3 text-center">{cell(matrix[i][0])}</td>
                 <td className="px-4 py-3 text-center">{cell(matrix[i][1])}</td>
-                <td className="bg-[color:var(--soft-bg)]/40 px-4 py-3 text-center">{cell(matrix[i][2])}</td>
+                <td className="bg-[color:var(--soft-bg)]/40 px-4 py-3 text-center">
+                  {cell(matrix[i][2])}
+                </td>
               </motion.tr>
             ))}
           </tbody>

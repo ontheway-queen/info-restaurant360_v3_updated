@@ -1,7 +1,10 @@
-import { Link } from "@tanstack/react-router";
+"use client";
+
+import Link from "next/link";
 import { ChefHat, Mail, Phone, MapPin } from "lucide-react";
 import { useLanguage } from "@/i18n/LanguageProvider";
-import logo from "/main-logo.png";
+
+const logo = "/main-logo.png";
 export function Footer() {
   const { t } = useLanguage();
   return (
@@ -18,27 +21,27 @@ export function Footer() {
           <h4 className="mb-3 text-sm font-semibold text-white">{t.footer.product}</h4>
           <ul className="space-y-2 text-sm text-[oklch(0.75_0.02_255)]">
             <li>
-              <Link to="/features" className="hover:text-primary">
+              <Link href="/features" className="hover:text-primary">
                 {t.footer.links.features}
               </Link>
             </li>
             <li>
-              <Link to="/pos" className="hover:text-primary">
+              <Link href="/pos" className="hover:text-primary">
                 {t.footer.links.pos}
               </Link>
             </li>
             <li>
-              <Link to="/kitchen-kot" className="hover:text-primary">
+              <Link href="/kitchen-kot" className="hover:text-primary">
                 {t.footer.links.kitchen}
               </Link>
             </li>
             <li>
-              <Link to="/inventory" className="hover:text-primary">
+              <Link href="/inventory" className="hover:text-primary">
                 {t.footer.links.inventory}
               </Link>
             </li>
             <li>
-              <Link to="/reports" className="hover:text-primary">
+              <Link href="/reports" className="hover:text-primary">
                 {t.footer.links.reports}
               </Link>
             </li>
@@ -49,22 +52,22 @@ export function Footer() {
           <h4 className="mb-3 text-sm font-semibold text-white">{t.footer.company}</h4>
           <ul className="space-y-2 text-sm text-[oklch(0.75_0.02_255)]">
             <li>
-              <Link to="/why-restaurant360" className="hover:text-primary">
+              <Link href="/why-restaurant360" className="hover:text-primary">
                 {t.footer.links.why}
               </Link>
             </li>
             <li>
-              <Link to="/request-demo" className="hover:text-primary">
+              <Link href="/request-demo" className="hover:text-primary">
                 {t.footer.links.request_demo}
               </Link>
             </li>
             <li>
-              <Link to="/contact" className="hover:text-primary">
+              <Link href="/contact" className="hover:text-primary">
                 {t.footer.links.about}
               </Link>
             </li>
             <li>
-              <Link to="/pricing" className="hover:text-primary">
+              <Link href="/pricing" className="hover:text-primary">
                 {t.footer.links.pricing}
               </Link>
             </li>

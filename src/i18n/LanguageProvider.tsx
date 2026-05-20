@@ -16,21 +16,27 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
     try {
       const stored = localStorage.getItem("r360_lang");
       if (stored === "en" || stored === "bn") setLangState(stored);
-    } catch {}
+    } catch {
+      // ignore localStorage errors (e.g. disabled cookies/privacy mode)
+    }
   }, []);
 
   useEffect(() => {
     try {
       document.documentElement.lang = lang;
       document.documentElement.classList.toggle("font-bn", lang === "bn");
-    } catch {}
+    } catch {
+      // ignore documentElement errors in environments without document
+    }
   }, [lang]);
 
   const setLang = (l: Lang) => {
     setLangState(l);
     try {
       localStorage.setItem("r360_lang", l);
-    } catch {}
+    } catch {
+      // ignore storage access errors
+    }
   };
 
   return (
