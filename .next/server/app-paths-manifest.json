@@ -1,3 +1,16 @@
 {
-  "/page": "app/page.js"
+  "/_not-found/page": "app/_not-found/page.js",
+  "/accounts-finance/page": "app/accounts-finance/page.js",
+  "/order-management/page": "app/order-management/page.js",
+  "/features/page": "app/features/page.js",
+  "/contact/page": "app/contact/page.js",
+  "/kitchen-kot/page": "app/kitchen-kot/page.js",
+  "/inventory/page": "app/inventory/page.js",
+  "/pos/page": "app/pos/page.js",
+  "/page": "app/page.js",
+  "/request-demo/page": "app/request-demo/page.js",
+  "/reports/page": "app/reports/page.js",
+  "/why-restaurant360/page": "app/why-restaurant360/page.js",
+  "/pricing/page": "app/pricing/page.js",
+  "/settlement/page": "app/settlement/page.js"
 }
