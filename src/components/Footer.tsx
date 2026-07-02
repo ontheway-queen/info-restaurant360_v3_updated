@@ -93,7 +93,10 @@ export function Footer() {
         </div>
       </div>
       <div className="border-t border-white/10 px-4 py-5 text-center text-xs text-[oklch(0.7_0.02_255)]">
-        © {new Date().getFullYear()} RESTAURANT360. {t.footer.rights}
+        © {new Date().getFullYear()} RESTAURANT360. {t.footer.rights} | A Product By{" "}
+        <Link className="text-[#38B1ED]" target="_blank" href="https://m360ict.com/">
+          M360ICT LIMITED
+        </Link>
       </div>
     </footer>
   );

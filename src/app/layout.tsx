@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "../styles.css";
 import { ClientLayout } from "./client-layout";
-
+import { Inter, Noto_Sans_Bengali } from "next/font/google";
 export const metadata: Metadata = {
   title: "RESTAURANT360 | Complete Restaurant Management Software",
   description:
@@ -27,10 +27,17 @@ export const metadata: Metadata = {
     ],
   },
 };
-
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-inter",
+});
+const notoSansBengali = Noto_Sans_Bengali({
+  subsets: ["bengali"],
+  variable: "--font-bn",
+});
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
+    <html lang="en" className={`${inter.variable} ${notoSansBengali.variable}`}>
       <body>
         <ClientLayout>{children}</ClientLayout>
       </body>
