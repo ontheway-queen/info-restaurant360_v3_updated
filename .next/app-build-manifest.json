@@ -27,16 +27,6 @@
       "static/chunks/353-bd2bb31c6eadf69f.js",
       "static/chunks/app/accounts-finance/page-775c2501a8de3e86.js"
     ],
-    "/inventory/page": [
-      "static/chunks/webpack-961c9555c6daba09.js",
-      "static/chunks/4bd1b696-c023c6e3521b1417.js",
-      "static/chunks/255-4f84124391a7dac4.js",
-      "static/chunks/main-app-f032ec7c533bc63c.js",
-      "static/chunks/565-758f84d5f305139a.js",
-      "static/chunks/619-ba102abea3e3d0e4.js",
-      "static/chunks/353-bd2bb31c6eadf69f.js",
-      "static/chunks/app/inventory/page-782af1474518e4d4.js"
-    ],
     "/contact/page": [
       "static/chunks/webpack-961c9555c6daba09.js",
       "static/chunks/4bd1b696-c023c6e3521b1417.js",
@@ -46,6 +36,16 @@
       "static/chunks/721-6397ce90785751f9.js",
       "static/chunks/353-bd2bb31c6eadf69f.js",
       "static/chunks/app/contact/page-d036d0319e2c12f8.js"
+    ],
+    "/features/page": [
+      "static/chunks/webpack-961c9555c6daba09.js",
+      "static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "static/chunks/255-4f84124391a7dac4.js",
+      "static/chunks/main-app-f032ec7c533bc63c.js",
+      "static/chunks/565-758f84d5f305139a.js",
+      "static/chunks/619-ba102abea3e3d0e4.js",
+      "static/chunks/353-bd2bb31c6eadf69f.js",
+      "static/chunks/app/features/page-1f22832736fdbc06.js"
     ],
     "/kitchen-kot/page": [
       "static/chunks/webpack-961c9555c6daba09.js",
@@ -57,7 +57,7 @@
       "static/chunks/353-bd2bb31c6eadf69f.js",
       "static/chunks/app/kitchen-kot/page-44fa3ff399b6b8f5.js"
     ],
-    "/features/page": [
+    "/inventory/page": [
       "static/chunks/webpack-961c9555c6daba09.js",
       "static/chunks/4bd1b696-c023c6e3521b1417.js",
       "static/chunks/255-4f84124391a7dac4.js",
@@ -65,7 +65,7 @@
       "static/chunks/565-758f84d5f305139a.js",
       "static/chunks/619-ba102abea3e3d0e4.js",
       "static/chunks/353-bd2bb31c6eadf69f.js",
-      "static/chunks/app/features/page-1f22832736fdbc06.js"
+      "static/chunks/app/inventory/page-782af1474518e4d4.js"
     ],
     "/order-management/page": [
       "static/chunks/webpack-961c9555c6daba09.js",
@@ -117,16 +117,6 @@
       "static/chunks/353-bd2bb31c6eadf69f.js",
       "static/chunks/app/pricing/page-67175f2c317d3ea1.js"
     ],
-    "/settlement/page": [
-      "static/chunks/webpack-961c9555c6daba09.js",
-      "static/chunks/4bd1b696-c023c6e3521b1417.js",
-      "static/chunks/255-4f84124391a7dac4.js",
-      "static/chunks/main-app-f032ec7c533bc63c.js",
-      "static/chunks/565-758f84d5f305139a.js",
-      "static/chunks/619-ba102abea3e3d0e4.js",
-      "static/chunks/353-bd2bb31c6eadf69f.js",
-      "static/chunks/app/settlement/page-d3a3e31d6d2b55f7.js"
-    ],
     "/reports/page": [
       "static/chunks/webpack-961c9555c6daba09.js",
       "static/chunks/4bd1b696-c023c6e3521b1417.js",
@@ -136,6 +126,16 @@
       "static/chunks/619-ba102abea3e3d0e4.js",
       "static/chunks/353-bd2bb31c6eadf69f.js",
       "static/chunks/app/reports/page-4ea207bd9e5a58ea.js"
+    ],
+    "/settlement/page": [
+      "static/chunks/webpack-961c9555c6daba09.js",
+      "static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "static/chunks/255-4f84124391a7dac4.js",
+      "static/chunks/main-app-f032ec7c533bc63c.js",
+      "static/chunks/565-758f84d5f305139a.js",
+      "static/chunks/619-ba102abea3e3d0e4.js",
+      "static/chunks/353-bd2bb31c6eadf69f.js",
+      "static/chunks/app/settlement/page-d3a3e31d6d2b55f7.js"
     ],
     "/why-restaurant360/page": [
       "static/chunks/webpack-961c9555c6daba09.js",
