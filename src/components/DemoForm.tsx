@@ -116,7 +116,7 @@
 
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { CheckCircle2, SendIcon } from "lucide-react";
+import { CheckCircle2, SendIcon, Loader2 } from "lucide-react";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -130,11 +130,9 @@ export function DemoForm() {
   const demoSchema = z.object({
     fullName: z.string().min(2, isBn ? "পূর্ণ নাম প্রয়োজন" : "Full name is required"),
 
-    restaurantName: z
-      .string()
-      .min(2, isBn ? "রেস্টুরেন্টের নাম প্রয়োজন" : "Restaurant name is required"),
+    restaurantName: z.string().optional(),
 
-    businessType: z.string().min(2, isBn ? "ব্যবসার ধরন প্রয়োজন" : "Business type is required"),
+    businessType: z.string().optional(),
 
     email: z.string().email(isBn ? "একটি সঠিক ইমেইল দিন" : "Invalid email address"),
 
@@ -143,11 +141,15 @@ export function DemoForm() {
       .min(8, isBn ? "ফোন নম্বর খুব ছোট" : "Phone number is too short")
       .regex(/^\+?\d+$/, isBn ? "সঠিক ফোন নম্বর দিন" : "Invalid phone number"),
 
-    outlets: z.string().min(1, isBn ? "আউটলেট সংখ্যা প্রয়োজন" : "Number of outlets is required"),
+    outlets: z.string().optional(),
 
-    message: z.string().min(5, isBn ? "মেসেজ প্রয়োজন" : "Message is required"),
+    message: z.string().optional(),
   });
+
   const [submitted, setSubmitted] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [apiError, setApiError] = useState<string | null>(null);
+
   type DemoFormValues = z.infer<typeof demoSchema>;
   const {
     register,
@@ -159,31 +161,74 @@ export function DemoForm() {
     mode: "onChange",
   });
 
-  const onSubmit = (data: DemoFormValues) => {
-    const text = `
- New Demo Request For Restaurant 360
+  const onSubmit = async (data: DemoFormValues) => {
+    setIsSubmitting(true);
+    setApiError(null);
 
- Name: ${data.fullName}
- Restaurant: ${data.restaurantName}
- Type: ${data.businessType}
- Outlets: ${data.outlets}
- Email: ${data.email}
- Phone: ${data.phone}
+    const payload: Record<string, string> = {
+      service_name: "Restaurant360",
+      name: data.fullName.trim(),
+      email: data.email.trim(),
+      phone: data.phone.trim(),
+    };
 
- 📝 Message:
- ${data.message}
-    `;
+    const companyName = data.restaurantName?.trim();
+    if (companyName) {
+      payload.company_name = companyName;
+    }
 
-    const encodedText = encodeURIComponent(text);
+    const detailsParts: string[] = [];
+    const businessType = data.businessType?.trim();
+    if (businessType) {
+      detailsParts.push(`Business Type: ${businessType}`);
+    }
+    const outlets = data.outlets?.trim();
+    if (outlets) {
+      detailsParts.push(`Outlets: ${outlets}`);
+    }
+    const message = data.message?.trim();
+    if (message) {
+      detailsParts.push(`Message: ${message}`);
+    }
 
-    // Replace with your WhatsApp number
-    const whatsappNumber = "8801958398308";
+    if (detailsParts.length > 0) {
+      payload.details = detailsParts.join(" | ");
+    }
 
-    window.open(`https://wa.me/${whatsappNumber}?text=${encodedText}`, "_blank");
+    try {
+      const response = await fetch(
+        "https://erm-server.m360ict.com/api/v1/public/common/service-request",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(payload),
+        }
+      );
 
-    setSubmitted(true);
-
-    reset();
+      if (response.ok) {
+        setSubmitted(true);
+        reset();
+      } else {
+        const errData = await response.json().catch(() => ({}));
+        setApiError(
+          errData.message ||
+            (isBn
+              ? "সাবমিট করতে সমস্যা হয়েছে। আবার চেষ্টা করুন।"
+              : "Failed to submit request. Please try again.")
+        );
+      }
+    } catch (error) {
+      console.error("Error submitting demo request:", error);
+      setApiError(
+        isBn
+          ? "সার্ভারে যোগাযোগ করা সম্ভব হয়নি। আবার চেষ্টা করুন।"
+          : "Unable to reach server. Please try again."
+      );
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   if (submitted) {
@@ -253,11 +298,25 @@ export function DemoForm() {
         {field("message", t.demoForm.message, t.demoForm.placeholders.message, "text", "textarea")}
       </div>
 
+      {apiError && (
+        <p className="mt-3 text-sm font-medium text-destructive">{apiError}</p>
+      )}
+
       <button
         type="submit"
-        className="mt-6 cursor-pointer inline-flex gap-3 w-full items-center justify-center rounded-full bg-gradient-to-r from-primary to-[oklch(0.72_0.18_55)] px-6 py-3 text-sm font-semibold text-primary-foreground shadow-lg shadow-primary/30 transition-transform hover:scale-[1.02] md:w-auto"
+        disabled={isSubmitting}
+        className="mt-6 cursor-pointer inline-flex gap-3 w-full items-center justify-center rounded-full bg-gradient-to-r from-primary to-[oklch(0.72_0.18_55)] px-6 py-3 text-sm font-semibold text-primary-foreground shadow-lg shadow-primary/30 transition-transform hover:scale-[1.02] disabled:opacity-60 disabled:cursor-not-allowed md:w-auto"
       >
-        {t.demoForm.submit} <SendIcon size={16} />
+        {isSubmitting ? (
+          <>
+            <Loader2 className="h-4 w-4 animate-spin" />
+            <span>{isBn ? "প্রসেসিং হচ্ছে..." : "Submitting..."}</span>
+          </>
+        ) : (
+          <>
+            {t.demoForm.submit} <SendIcon size={16} />
+          </>
+        )}
       </button>
     </form>
   );
